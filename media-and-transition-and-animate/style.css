@@ -1,0 +1,179 @@
+html {
+  font-size: 62.5%;
+}
+
+.simple-linear {
+  background-image: linear-gradient(rgb(112, 76, 141), rgb(225, 211, 243));
+  min-height: 100vh;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: black;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 0px;
+  padding: 10px 5px 10px 5px;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin: 12px 0px 5px;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin: 10px 0px 5px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 3px 0px;
+  color: hsl(258, 63%, 31%);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+.contact > div {
+  padding: 5px;
+  margin: 5px 15px;
+}
+
+.imgcontact {
+  box-sizing: border-box;
+  padding: 5px;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.imgcontact:hover {
+  height: 110px;
+}
+
+.pet-all {
+  animation: pet-all 3s ease-in-out infinite;
+  display: flex;
+  max-width: 600px;
+}
+
+@keyframes pet-all {
+  0% {
+    transform: scale(1);
+    margin: 10px 0px 10px 0px;
+  }
+  50% {
+    transform: scale(1.25);
+    margin: 10px 0px 10px 0px;
+  }
+  100% {
+    transform: scale(1);
+    margin: 10px 0px 10px 0px;
+  }
+}
+/* mobile screen */
+@media (min-width: 0px) and (max-width: 700px) {
+  .about-me {
+    padding: 10px 30px;
+  }
+  .work-history {
+    padding: 0px 20px;
+  }
+
+  .education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .education > div {
+    margin: 4px;
+  }
+
+  .interests > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .pet {
+    height: 120px;
+  }
+}
+/* Medium screen */
+@media (min-width: 701px) {
+  .main-body {
+    padding: 20px 20px;
+  }
+
+  .about-me {
+    padding: 10px 100px;
+  }
+
+  .work-history {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 30px;
+  }
+
+  .work-history > div {
+    flex-wrap: wrap;
+    margin: 4px;
+    padding: 5px;
+  }
+
+  .education {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px 10px;
+    padding: 0px 15px;
+  }
+
+  .education > div {
+    flex-flow: row wrap;
+    margin: 4px;
+    padding: 5px;
+  }
+
+  .interests {
+    display: flex;
+    justify-content: center;
+  }
+
+  .interests > div {
+    flex-wrap: wrap;
+  }
+}
+/* L screen */
+@media (min-width: 1400px) {
+  .about-me {
+    background-color: hsl(271, 97%, 72%);
+  }
+  .main-body {
+    padding: 20px 300px;
+  }
+  .education {
+    padding: 0px 70px;
+  }
+}
+
+/* print */
+@media print {
+  h1 {
+    color: black;
+  }
+  p {
+    color: black;
+  }
+}
